@@ -52,6 +52,6 @@ if st.button("결과 보기"):
     mbti += "F" if answers.count("F") > answers.count("T") else "T"
     mbti += "J" if answers.count("J") > answers.count("P") else "P"
 
-    character = character_map.get(mbti, "알 수 없는 캐릭터")
+    character = character_map.get(mbti.upper(), "알 수 없는 캐릭터")
     st.subheader(f"당신의 성향은: {character}!")
     st.write(f"MBTI 결과: {mbti}")
